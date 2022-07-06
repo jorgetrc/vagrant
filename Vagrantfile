@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
   end
   config.vm.define "ubuntu" do |ubuntu|
     ubuntu.vm.box = "ubuntu/focal64"
-    ubuntu.vm.network "public_network", ip: "192.168.1.100"
+    ubuntu.vm.network "public_network", ip: "192.168.1.200"
     #ubuntu.vm.network "forwarded_port", guest: 80, host:8080
     #ubuntu.vm.network "private_network", ip: "192.168.1.200"
     #ubuntu.vm.network "private_network", type: "dhcp"
